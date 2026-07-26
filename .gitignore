@@ -1,0 +1,14 @@
+.chrome-globe-test/
+.chrome-globe-test-3/
+.chrome-reference-check/
+.chrome-reference-check-2/
+
+backups/
+backup-*/
+
+node_modules/
+dist/
+
+*.log
+
+.git

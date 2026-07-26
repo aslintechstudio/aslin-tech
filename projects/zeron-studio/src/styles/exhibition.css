@@ -1,0 +1,507 @@
+.contact-opening {
+  height: calc(100svh - 4.375rem);
+  min-height: 38rem;
+  padding: clamp(1rem, 2vh, 1.5rem) var(--page-gutter) clamp(1.25rem, 2.5vh, 2rem);
+  overflow: hidden;
+}
+
+.contact-sheet {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(8, minmax(0, 1fr));
+  gap: clamp(0.75rem, 1.15vw, 1.25rem);
+  width: min(100%, var(--container-wide));
+  height: 100%;
+  margin-inline: auto;
+}
+
+.contact-title {
+  display: flex;
+  grid-row: 1 / 3;
+  grid-column: 1 / 4;
+  align-self: start;
+  gap: clamp(0.75rem, 1.4vw, 1.5rem);
+  align-items: flex-start;
+  padding-top: 0.15rem;
+}
+
+.contact-title button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  text-transform: inherit;
+}
+
+.contact-title__number {
+  padding-top: 0.45rem;
+  color: var(--color-oxidized-bronze);
+  font-size: var(--type-sm);
+  letter-spacing: 0.08em;
+  opacity: 0;
+  animation: contact-fade-in 350ms 430ms var(--ease-standard) forwards;
+}
+
+.contact-title h1 {
+  max-width: 8ch;
+  margin: 0;
+  font-size: clamp(2.25rem, 4.2vw, 3.75rem);
+  font-weight: 500;
+  letter-spacing: -0.065em;
+  line-height: 0.94;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(0.75rem);
+  animation: contact-title-in 500ms 480ms var(--ease-standard) forwards;
+}
+
+.contact-title h1 button {
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
+.contact-fragment {
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  background: var(--color-secondary-background);
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0.985);
+  animation: contact-image-in 480ms var(--ease-standard) forwards;
+}
+
+.contact-fragment img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  object-fit: cover;
+  filter: saturate(0.62) contrast(1.06) brightness(0.94);
+  transition: opacity var(--duration-base) var(--ease-standard);
+  flex: 1;
+}
+
+.contact-fragment figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 0.35rem;
+  color: var(--color-archive-grey);
+  font-size: 0.5625rem;
+  letter-spacing: 0.055em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.contact-fragment figcaption span:last-child {
+  text-align: right;
+}
+
+.contact-fragment--a {
+  z-index: 2;
+  grid-row: 1 / 7;
+  grid-column: 4 / 8;
+  animation-delay: 100ms;
+}
+
+.contact-fragment--b {
+  grid-row: 1 / 4;
+  grid-column: 8 / 12;
+  animation-delay: 190ms;
+}
+
+.contact-fragment--c {
+  grid-row: 3 / 7;
+  grid-column: 1 / 4;
+  animation-delay: 280ms;
+}
+
+.contact-fragment--d {
+  grid-row: 4 / -1;
+  grid-column: 8 / 10;
+  animation-delay: 360ms;
+}
+
+.contact-information {
+  display: grid;
+  grid-row: 7 / -1;
+  grid-column: 1 / 4;
+  align-self: end;
+  gap: clamp(0.75rem, 1.5vh, 1.25rem);
+  opacity: 0;
+  animation: contact-fade-in 400ms 680ms var(--ease-standard) forwards;
+}
+
+.contact-facts {
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--color-limestone);
+  font-size: var(--type-xs);
+  letter-spacing: 0.065em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.contact-facts span[aria-hidden] {
+  color: var(--color-archive-grey);
+}
+
+.contact-description {
+  max-width: 34ch;
+  color: var(--color-archive-grey);
+  font-size: var(--type-sm);
+  line-height: 1.45;
+}
+
+.contact-link {
+  display: inline-flex;
+  grid-row: 8;
+  grid-column: 4 / 7;
+  width: fit-content;
+  min-height: 2.75rem;
+  gap: 0.7rem;
+  align-self: end;
+  align-items: center;
+  border-bottom: 1px solid currentColor;
+  font-size: var(--type-xs);
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.project-switcher {
+  grid-row: 4 / -1;
+  grid-column: 11 / -1;
+  align-self: start;
+  min-width: 0;
+}
+
+.project-switcher ol {
+  border-top: 1px solid var(--color-limestone);
+}
+
+.project-switcher li {
+  position: relative;
+  border-bottom: 1px solid var(--color-limestone);
+  opacity: 0.48;
+  transition:
+    opacity var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard);
+}
+
+.project-switcher li::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-oxidized-bronze);
+  content: '';
+  transform: translateY(-50%);
+  transition: width var(--duration-base) var(--ease-standard);
+}
+
+.project-switcher li.is-active {
+  opacity: 1;
+}
+
+.project-switcher li.is-active::before {
+  width: 0.45rem;
+}
+
+.project-switcher button {
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  gap: 0.35rem;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.55rem 0 0.55rem 0.75rem;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--type-xs);
+  letter-spacing: 0.045em;
+  line-height: 1.25;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.project-switcher button span:first-child {
+  color: var(--color-archive-grey);
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.project-switcher .is-active button span:first-child {
+  color: var(--color-oxidized-bronze);
+}
+
+.project-switcher button:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: -1px;
+}
+
+.contact-sheet__vertical {
+  display: flex;
+  grid-row: 4 / -1;
+  grid-column: 10 / 11;
+  align-self: start;
+  justify-self: end;
+  z-index: 2;
+  gap: 1rem;
+  pointer-events: none;
+  color: var(--color-archive-grey);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.contact-opening--leaving .contact-fragment {
+  opacity: 0.35;
+  animation: none;
+  transform: scale(0.99);
+  transition:
+    opacity 200ms var(--ease-standard),
+    transform 200ms var(--ease-standard);
+}
+
+.contact-opening--leaving .contact-title h1,
+.contact-opening--leaving .contact-title__number,
+.contact-opening--leaving .contact-information {
+  opacity: 0.4;
+  animation: none;
+  transform: translateY(-0.5rem);
+  transition:
+    opacity 200ms var(--ease-standard),
+    transform 200ms var(--ease-standard);
+}
+
+.contact-opening--entering .contact-title button,
+.contact-opening--entering .contact-information {
+  animation: contact-switch-in 320ms var(--ease-standard) both;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (hover: hover) {
+  .project-switcher li:not(.is-active):hover {
+    border-color: var(--color-archive-grey);
+    opacity: 0.82;
+  }
+
+  .project-switcher li:not(.is-active):hover button span:first-child {
+    color: var(--color-oxidized-bronze);
+  }
+}
+
+@media (min-width: 64.01rem) {
+  .contact-fragment--b {
+    grid-column: 8 / -1;
+  }
+
+  .contact-fragment--d {
+    margin-right: clamp(-5.5rem, -5vw, -3.5rem);
+  }
+
+  .project-switcher button {
+    padding-left: 1.3rem;
+  }
+}
+
+@media (max-width: 64rem) {
+  .contact-title {
+    grid-column: 1 / 5;
+  }
+
+  .contact-title h1 {
+    font-size: clamp(2.25rem, 4.8vw, 3.25rem);
+  }
+
+  .contact-information {
+    grid-column: 1 / 5;
+  }
+
+  .contact-fragment--a {
+    grid-column: 4 / 8;
+  }
+
+  .contact-fragment--b {
+    grid-column: 8 / -1;
+  }
+
+  .contact-fragment--d {
+    grid-column: 8 / 9;
+  }
+
+  .project-switcher {
+    grid-column: 10 / -1;
+    padding-left: 0;
+  }
+
+  .contact-sheet__vertical {
+    grid-column: 9 / 10;
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .contact-opening {
+    height: auto;
+    min-height: 0;
+    padding: 1.5rem 1.25rem 3rem;
+    overflow: hidden;
+  }
+
+  .contact-sheet {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 0.75rem;
+    height: auto;
+  }
+
+  .contact-title {
+    order: 1;
+    grid-row: auto;
+    grid-column: 1 / -1;
+    margin-bottom: 1.25rem;
+  }
+
+  .contact-title h1 {
+    font-size: clamp(2.8rem, 13vw, 3.25rem);
+    line-height: 0.88;
+  }
+
+  .contact-title__number {
+    padding-top: 0.35rem;
+  }
+
+  .contact-fragment--a {
+    order: 2;
+    grid-row: auto;
+    grid-column: 1 / 4;
+    aspect-ratio: 3 / 4;
+  }
+
+  .contact-fragment--b {
+    order: 2;
+    grid-row: auto;
+    grid-column: 4;
+    aspect-ratio: 1 / 2.15;
+    align-self: end;
+  }
+
+  .contact-information {
+    order: 3;
+    grid-row: auto;
+    grid-column: 1 / -1;
+    margin-block: 1.75rem 1.25rem;
+  }
+
+  .contact-facts {
+    flex-wrap: wrap;
+  }
+
+  .contact-description {
+    max-width: 32ch;
+    font-size: 1rem;
+  }
+
+  .contact-fragment--c {
+    order: 4;
+    grid-row: auto;
+    grid-column: 1 / 3;
+    aspect-ratio: 1;
+  }
+
+  .contact-fragment--d {
+    order: 4;
+    grid-row: auto;
+    grid-column: 3 / -1;
+    aspect-ratio: 3 / 4;
+    margin-top: 2.5rem;
+  }
+
+  .project-switcher {
+    order: 5;
+    grid-row: auto;
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .project-switcher button {
+    min-height: 2.75rem;
+    padding-block: 0.65rem;
+  }
+
+  .contact-link {
+    order: 6;
+    grid-row: auto;
+    grid-column: 1 / -1;
+    margin-top: 1.75rem;
+  }
+
+  .contact-sheet__vertical {
+    display: none;
+  }
+
+}
+
+@keyframes contact-image-in {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes contact-title-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes contact-fade-in {
+  to { opacity: 1; }
+}
+
+@keyframes contact-switch-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-title__number,
+  .contact-title h1,
+  .contact-fragment,
+  .contact-information {
+    opacity: 1;
+    animation: none;
+    transform: none;
+  }
+}

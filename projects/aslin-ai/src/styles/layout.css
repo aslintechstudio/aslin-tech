@@ -1,0 +1,127 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 20;
+  display: flex;
+  width: var(--sidebar-width);
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-y: auto;
+  border-right: 1px solid var(--neutral-200);
+  background: var(--neutral-0);
+  padding: var(--space-5) var(--space-4);
+}
+
+.app-shell__body {
+  min-width: 0;
+  margin-left: var(--sidebar-width);
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  height: var(--topbar-height);
+  align-items: center;
+  gap: var(--space-4);
+  border-bottom: 1px solid rgb(228 228 231 / 70%);
+  background: var(--neutral-50);
+  padding: 0 var(--space-6);
+}
+
+.topbar__menu-button {
+  display: none;
+}
+
+.topbar__actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.main-content {
+  width: 100%;
+  max-width: var(--content-max-width);
+  min-width: 0;
+  margin: 0 auto;
+  padding: var(--space-10) clamp(var(--space-6), 4vw, 3.5rem);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .app-shell > .sidebar {
+    display: none;
+  }
+
+  .app-shell__body {
+    margin-left: 0;
+  }
+
+  .topbar {
+    gap: var(--space-2);
+    padding: 0 var(--space-4);
+  }
+
+  .topbar__menu-button {
+    display: inline-flex;
+  }
+
+  .main-content {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: block;
+  }
+
+  .mobile-menu__backdrop {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background: rgb(24 24 27 / 45%);
+    cursor: default;
+  }
+
+  .mobile-menu__panel {
+    position: relative;
+    width: min(19rem, 88vw);
+    height: 100%;
+    background: var(--neutral-0);
+  }
+
+  .mobile-menu__panel .sidebar {
+    position: static;
+    width: 100%;
+    min-height: 100%;
+    border-right: 0;
+  }
+
+  .mobile-menu__close {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-4);
+    z-index: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar .search-bar {
+    min-width: 0;
+  }
+
+  .topbar__actions {
+    gap: 0;
+  }
+}

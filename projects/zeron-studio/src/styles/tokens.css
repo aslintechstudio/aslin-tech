@@ -1,0 +1,63 @@
+:root {
+  /* Color */
+  --color-museum-ivory: #191c1f;
+  --color-paper-white: #f1f0ec;
+  --color-graphite: #f1f0ec;
+  --color-secondary-text: #9b9fa3;
+  --color-archive-grey: #9b9fa3;
+  --color-limestone: #464b50;
+  --color-oxidized-bronze: #ff5a36;
+  --color-mineral-charcoal: #202428;
+  --color-secondary-background: #2c3136;
+
+  /* Typography families */
+  --font-sans: Inter, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
+
+  /* Fluid typography scale */
+  --type-xs: clamp(0.6875rem, 0.65rem + 0.1vw, 0.75rem);
+  --type-sm: clamp(0.8125rem, 0.77rem + 0.15vw, 0.9375rem);
+  --type-body: clamp(1rem, 0.94rem + 0.2vw, 1.125rem);
+  --type-lead: clamp(1.25rem, 1.05rem + 0.65vw, 1.75rem);
+  --type-display-sm: clamp(2rem, 1.35rem + 2.1vw, 3.75rem);
+  --type-display-md: clamp(2.75rem, 1.6rem + 3.7vw, 6.5rem);
+  --type-display-lg: clamp(3.5rem, 1.5rem + 6.5vw, 10rem);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --space-11: 12rem;
+  --section-space: clamp(6rem, 12vw, 12rem);
+
+  /* Borders */
+  --border-hairline: 1px;
+  --border-standard: 2px;
+  --border-color: color-mix(in srgb, var(--color-graphite) 20%, transparent);
+
+  /* Motion */
+  --duration-fast: 160ms;
+  --duration-base: 320ms;
+  --duration-slow: 640ms;
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Containers and grid */
+  --container-reading: 48rem;
+  --container-standard: 90rem;
+  --container-wide: 120rem;
+  --page-gutter: clamp(2rem, 4vw, 4.25rem);
+  --grid-gap: clamp(1rem, 2vw, 2rem);
+
+  /* Breakpoint reference tokens (mirrored in media queries) */
+  --breakpoint-mobile: 30rem;
+  --breakpoint-tablet: 48rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 90rem;
+}

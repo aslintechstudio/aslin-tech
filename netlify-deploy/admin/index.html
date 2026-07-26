@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ASLIN TECH yönetim paneli prototipi">
+  <meta name="theme-color" content="#07101f">
+  <title>ASLIN TECH Yönetim Paneli</title>
+  <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Ana içeriğe geç</a>
+
+  <aside class="sidebar" id="sidebar" aria-label="Yönetim paneli menüsü">
+    <div class="sidebar-brand">
+      <span class="brand-mark" aria-hidden="true">A</span>
+      <span><strong>ASLIN TECH</strong><small>Yönetim Paneli</small></span>
+      <button class="icon-button sidebar-close" id="sidebar-close" type="button" aria-label="Menüyü kapat">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+
+    <nav class="sidebar-nav">
+      <button class="nav-item active" type="button" data-page="overview">
+        <span class="nav-icon" aria-hidden="true">⌂</span> Genel Bakış
+      </button>
+      <button class="nav-item" type="button" data-page="projects">
+        <span class="nav-icon" aria-hidden="true">◇</span> Projeler
+      </button>
+      <button class="nav-item" type="button" data-page="services">
+        <span class="nav-icon" aria-hidden="true">▦</span> Hizmetler
+      </button>
+      <button class="nav-item" type="button" data-page="messages">
+        <span class="nav-icon" aria-hidden="true">✉</span> Mesajlar
+        <span class="nav-badge" id="message-badge">0</span>
+      </button>
+      <button class="nav-item" type="button" data-page="content">
+        <span class="nav-icon" aria-hidden="true">≡</span> Site İçeriği
+      </button>
+      <button class="nav-item" type="button" data-page="settings">
+        <span class="nav-icon" aria-hidden="true">⚙</span> Ayarlar
+      </button>
+    </nav>
+
+    <a class="site-return" href="../">
+      <span aria-hidden="true">←</span> Siteye Dön
+    </a>
+    <div class="sidebar-footer">Prototip · Yerel veriler</div>
+  </aside>
+
+  <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar-title">
+        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Menüyü aç" aria-controls="sidebar" aria-expanded="false">
+          <span aria-hidden="true">☰</span>
+        </button>
+        <div>
+          <p>ASLIN TECH</p>
+          <h1 id="page-title">Genel Bakış</h1>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <label class="search-box">
+          <span class="sr-only">Panelde ara</span>
+          <span aria-hidden="true">⌕</span>
+          <input id="global-search" type="search" placeholder="Panelde ara..." autocomplete="off">
+        </label>
+        <button class="icon-button notification-button" type="button" aria-label="Bildirimler">
+          <span aria-hidden="true">♢</span><i aria-hidden="true"></i>
+        </button>
+        <button class="admin-profile" type="button" aria-label="Admin profilini görüntüle">
+          <span class="avatar">IÇ</span>
+          <span class="profile-copy"><strong>Irmak Çelik</strong><small>Kurucu</small></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="page active" id="page-overview" data-title="Genel Bakış">
+        <div class="page-intro">
+          <div><p class="eyebrow">25 Temmuz 2026</p><h2>Hoş geldiniz, Irmak.</h2><p>Site prototipinizin güncel durumunu buradan takip edin.</p></div>
+          <button class="button primary" type="button" data-action="new-project">+ Yeni Proje Ekle</button>
+        </div>
+
+        <div class="stats-grid" id="stats-grid"></div>
+
+        <div class="dashboard-grid">
+          <article class="panel span-two">
+            <div class="panel-heading"><div><p class="eyebrow">Portfolyo</p><h3>Son Eklenen Projeler</h3></div><button class="text-button" type="button" data-go="projects">Tümünü gör →</button></div>
+            <div class="compact-list" id="recent-projects"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-heading"><div><p class="eyebrow">Kısayollar</p><h3>Hızlı İşlemler</h3></div></div>
+            <div class="quick-actions">
+              <button type="button" data-action="new-project"><span>＋</span><strong>Yeni proje</strong><small>Portfolyoya çalışma ekle</small></button>
+              <button type="button" data-action="new-service"><span>＋</span><strong>Yeni hizmet</strong><small>Hizmet kataloğunu güncelle</small></button>
+              <button type="button" data-go="content"><span>✎</span><strong>İçerikleri düzenle</strong><small>Site metinlerini yönet</small></button>
+            </div>
+          </article>
+          <article class="panel span-three">
+            <div class="panel-heading"><div><p class="eyebrow">Gelen Kutusu</p><h3>Son Mesajlar</h3></div><button class="text-button" type="button" data-go="messages">Tümünü gör →</button></div>
+            <div class="message-preview-list" id="recent-messages"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="page-projects" data-title="Projeler" hidden>
+        <div class="page-intro">
+          <div><p class="eyebrow">Portfolyo Yönetimi</p><h2>Projeler</h2><p>Demo projeleri ekleyin, güncelleyin veya yayından kaldırın.</p></div>
+          <button class="button primary" type="button" data-action="new-project">+ Yeni Proje Ekle</button>
+        </div>
+        <div class="panel table-panel">
+          <div class="table-toolbar"><p id="project-count"></p><label><span class="sr-only">Projelerde ara</span><input class="small-search" id="project-search" type="search" placeholder="Proje ara..."></label></div>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Proje</th><th>Kategori</th><th>Durum</th><th class="actions-heading">İşlemler</th></tr></thead>
+              <tbody id="projects-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-services" data-title="Hizmetler" hidden>
+        <div class="page-intro">
+          <div><p class="eyebrow">Hizmet Kataloğu</p><h2>Hizmetler</h2><p>Kurumsal sitede sunulan hizmetlerin prototip listesini yönetin.</p></div>
+          <button class="button primary" type="button" data-action="new-service">+ Yeni Hizmet Ekle</button>
+        </div>
+        <div class="panel table-panel">
+          <div class="table-toolbar"><p id="service-count"></p></div>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Sıra</th><th>Hizmet</th><th>Durum</th><th class="actions-heading">İşlemler</th></tr></thead>
+              <tbody id="services-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-messages" data-title="Mesajlar" hidden>
+        <div class="page-intro">
+          <div><p class="eyebrow">İletişim</p><h2>Mesajlar</h2><p>İletişim formundan gelen örnek talepleri görüntüleyin.</p></div>
+        </div>
+        <div class="panel table-panel">
+          <div class="table-toolbar">
+            <p id="message-count"></p>
+            <label class="select-label">Filtrele
+              <select id="message-filter"><option value="all">Tüm mesajlar</option><option value="unread">Okunmamış</option><option value="read">Okunmuş</option></select>
+            </label>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Gönderen</th><th>Konu</th><th>Tarih</th><th>Durum</th><th class="actions-heading">İşlemler</th></tr></thead>
+              <tbody id="messages-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-content" data-title="Site İçeriği" hidden>
+        <div class="page-intro"><div><p class="eyebrow">İçerik Prototipi</p><h2>Site İçeriği</h2><p>Bu alan yalnızca yerel prototip verilerini saklar; ana siteyi otomatik olarak değiştirmez.</p></div></div>
+        <form class="panel form-panel" id="content-form">
+          <div class="form-heading"><div><h3>Kurumsal metinler</h3><p>Başlık ve bölüm açıklamalarını düzenleyin.</p></div><span class="prototype-badge">Yalnızca prototip</span></div>
+          <div class="form-grid">
+            <label class="full">Hero başlığı<input name="heroTitle" required maxlength="120"></label>
+            <label class="full">Hero açıklaması<textarea name="heroDescription" required rows="3" maxlength="320"></textarea></label>
+            <label class="full">Hizmetler bölüm açıklaması<textarea name="servicesDescription" required rows="3" maxlength="320"></textarea></label>
+            <label class="full">Demo Projeler açıklaması<textarea name="projectsDescription" required rows="3" maxlength="320"></textarea></label>
+            <label class="full">Neden ASLIN TECH açıklaması<textarea name="whyDescription" required rows="3" maxlength="320"></textarea></label>
+            <label class="full">İletişim başlığı<input name="contactTitle" required maxlength="120"></label>
+            <label class="full">İletişim açıklaması<textarea name="contactDescription" required rows="3" maxlength="320"></textarea></label>
+          </div>
+          <div class="form-actions"><button class="button primary" type="submit">Değişiklikleri Kaydet</button></div>
+        </form>
+      </section>
+
+      <section class="page" id="page-settings" data-title="Ayarlar" hidden>
+        <div class="page-intro"><div><p class="eyebrow">Panel Tercihleri</p><h2>Ayarlar</h2><p>Temel site ve bildirim tercihlerini yerel olarak saklayın.</p></div></div>
+        <form class="panel form-panel" id="settings-form">
+          <div class="form-heading"><div><h3>Genel ayarlar</h3><p>Kurumsal iletişim ve çalışma bilgileri.</p></div></div>
+          <div class="form-grid">
+            <label>Site adı<input name="siteName" required maxlength="80"></label>
+            <label>İletişim e-postası<input name="email" type="email" required></label>
+            <label>Çalışma saatleri<input name="hours" required maxlength="100"></label>
+            <label>Konum<input name="location" required maxlength="120"></label>
+          </div>
+          <div class="settings-block">
+            <label class="switch-row"><span><strong>Bakım modu</strong><small>Prototip bakım durumu tercihini saklar.</small></span><input name="maintenance" type="checkbox" role="switch"><i aria-hidden="true"></i></label>
+            <fieldset><legend>Bildirim tercihleri</legend>
+              <label class="check-row"><input name="emailNotifications" type="checkbox"> Yeni mesajlarda e-posta bildirimi</label>
+              <label class="check-row"><input name="weeklySummary" type="checkbox"> Haftalık özet bildirimi</label>
+              <label class="check-row"><input name="projectUpdates" type="checkbox"> Proje güncelleme bildirimleri</label>
+            </fieldset>
+          </div>
+          <div class="form-actions"><button class="button primary" type="submit">Ayarları Kaydet</button></div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="editor-modal" role="dialog" aria-modal="true" aria-labelledby="editor-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="document">
+      <div class="modal-header"><div><p class="eyebrow" id="editor-kicker">Kayıt</p><h2 id="editor-title">Yeni Kayıt</h2></div><button class="icon-button" type="button" data-close-modal aria-label="Pencereyi kapat">×</button></div>
+      <form id="editor-form" novalidate>
+        <div class="form-grid" id="editor-fields"></div>
+        <p class="form-error" id="editor-error" role="alert"></p>
+        <div class="form-actions"><button class="button secondary" type="button" data-close-modal>Vazgeç</button><button class="button primary" type="submit">Kaydet</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="message-modal" role="dialog" aria-modal="true" aria-labelledby="message-modal-title" hidden>
+    <div class="modal-backdrop" data-close-message></div>
+    <article class="modal-card message-detail">
+      <div class="modal-header"><div><p class="eyebrow">Mesaj Detayı</p><h2 id="message-modal-title">Mesaj</h2></div><button class="icon-button" type="button" data-close-message aria-label="Pencereyi kapat">×</button></div>
+      <div id="message-detail-content"></div>
+      <div class="form-actions"><button class="button secondary" type="button" data-close-message>Kapat</button><a class="button primary" id="message-reply" href="#">Yanıtla</a></div>
+    </article>
+  </div>
+
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script src="./admin.js"></script>
+</body>
+</html>
