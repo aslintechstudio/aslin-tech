@@ -44,8 +44,7 @@ function ProjectShowcase() {
   return (
     <section
       className={`contact-opening contact-opening--${phase}`}
-      id="top"
-      data-section="hero"
+      data-section="project-showcase"
       aria-labelledby="project-title"
     >
       <p className="visually-hidden" aria-live="polite">
@@ -57,11 +56,11 @@ function ProjectShowcase() {
           <button className="contact-title__number" type="button" onClick={() => showProject(nextIndex)} aria-label={copy.nextProject}>
             {project.number}
           </button>
-          <h1 id="project-title">
+          <h2 id="project-title">
             <button type="button" onClick={() => showProject(nextIndex)} aria-label={`${project.title}: ${copy.nextProject}`}>
               {project.title}
             </button>
-          </h1>
+          </h2>
         </header>
 
         <ProjectImages

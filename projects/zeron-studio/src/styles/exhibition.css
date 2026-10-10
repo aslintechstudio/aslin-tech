@@ -45,7 +45,7 @@
   animation: contact-fade-in 350ms 430ms var(--ease-standard) forwards;
 }
 
-.contact-title h1 {
+.contact-title h2 {
   max-width: 8ch;
   margin: 0;
   font-size: clamp(2.25rem, 4.2vw, 3.75rem);
@@ -58,7 +58,7 @@
   animation: contact-title-in 500ms 480ms var(--ease-standard) forwards;
 }
 
-.contact-title h1 button {
+.contact-title h2 button {
   font: inherit;
   letter-spacing: inherit;
   line-height: inherit;
@@ -275,7 +275,7 @@
     transform 200ms var(--ease-standard);
 }
 
-.contact-opening--leaving .contact-title h1,
+.contact-opening--leaving .contact-title h2,
 .contact-opening--leaving .contact-title__number,
 .contact-opening--leaving .contact-information {
   opacity: 0.4;
@@ -332,7 +332,7 @@
     grid-column: 1 / 5;
   }
 
-  .contact-title h1 {
+  .contact-title h2 {
     font-size: clamp(2.25rem, 4.8vw, 3.25rem);
   }
 
@@ -385,7 +385,7 @@
     margin-bottom: 1.25rem;
   }
 
-  .contact-title h1 {
+  .contact-title h2 {
     font-size: clamp(2.8rem, 13vw, 3.25rem);
     line-height: 0.88;
   }
@@ -497,7 +497,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .contact-title__number,
-  .contact-title h1,
+  .contact-title h2,
   .contact-fragment,
   .contact-information {
     opacity: 1;

@@ -118,6 +118,28 @@ export const projects = [
       { url: image('photo-1524995997946-a1c2e315a42f', 1200), caption: 'Görsel 04 / Taş Detayı', alt: 'Yerel taş katmanlarının yakın görünümü', position: '68% center' },
     ],
   },
+  {
+    id: 'material-studies',
+    number: '06',
+    title: 'Material Studies',
+    location: 'Stüdyo',
+    country: 'Araştırma',
+    type: 'Editoryal Tasarım',
+    locationEn: 'Studio',
+    countryEn: 'Research',
+    typeEn: 'Editorial Design',
+    year: '2026',
+    description:
+      'Kitap, yüzey ve mekân araştırmalarını bir araya getiren görsel çalışma; doku, oran ve editoryal ritmi keşfeder.',
+    descriptionEn:
+      'A visual study bringing together books, surfaces and spaces to explore texture, proportion and editorial rhythm.',
+    images: [
+      { url: image('photo-1524995997946-a1c2e315a42f', 1200), caption: 'Görsel 01 / Kitap', alt: 'Kitaplar ve okuma mekânı üzerine editoryal çalışma', position: 'center' },
+      { url: image('photo-1600566752355-35792bedcfea', 1200), caption: 'Görsel 02 / Doku', alt: 'İç mekân yüzeyleri ve malzeme dokuları', position: 'center' },
+      { url: image('photo-1600566753086-00f18fb6b3ea', 1200), caption: 'Görsel 03 / Kompozisyon', alt: 'Malzeme ve mekân oranları üzerine görsel çalışma', position: 'center' },
+      { url: image('photo-1494526585095-c41746248156', 1200), caption: 'Görsel 04 / Detay', alt: 'Mekân ve yüzey detayları', position: 'center' },
+    ],
+  },
 ]
 
 export default projects

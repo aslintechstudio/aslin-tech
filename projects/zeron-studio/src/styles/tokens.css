@@ -17,9 +17,9 @@
   /* Fluid typography scale */
   --type-xs: clamp(0.6875rem, 0.65rem + 0.1vw, 0.75rem);
   --type-sm: clamp(0.8125rem, 0.77rem + 0.15vw, 0.9375rem);
-  --type-body: clamp(1rem, 0.94rem + 0.2vw, 1.125rem);
-  --type-lead: clamp(1.25rem, 1.05rem + 0.65vw, 1.75rem);
-  --type-display-sm: clamp(2rem, 1.35rem + 2.1vw, 3.75rem);
+  --type-body: clamp(0.9375rem, 0.9rem + 0.15vw, 1rem);
+  --type-lead: clamp(1.0625rem, 1rem + 0.25vw, 1.25rem);
+  --type-display-sm: clamp(1.5rem, 2.5vw, 2.25rem);
   --type-display-md: clamp(2.75rem, 1.6rem + 3.7vw, 6.5rem);
   --type-display-lg: clamp(3.5rem, 1.5rem + 6.5vw, 10rem);
 
@@ -50,8 +50,8 @@
 
   /* Containers and grid */
   --container-reading: 48rem;
-  --container-standard: 90rem;
-  --container-wide: 120rem;
+  --container-standard: 80rem;
+  --container-wide: 80rem;
   --page-gutter: clamp(2rem, 4vw, 4.25rem);
   --grid-gap: clamp(1rem, 2vw, 2rem);
 
