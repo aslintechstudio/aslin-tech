@@ -1,0 +1,252 @@
+[
+  {
+    "file": "kahve.webp",
+    "source": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      933,
+      1400
+    ],
+    "bytes": 89732
+  },
+  {
+    "file": "latte.webp",
+    "source": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      787,
+      1050
+    ],
+    "bytes": 70652
+  },
+  {
+    "file": "buzlu-kahve.webp",
+    "source": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      700,
+      1050
+    ],
+    "bytes": 32774
+  },
+  {
+    "file": "kruvasan.webp",
+    "source": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      900,
+      720
+    ],
+    "bytes": 66504
+  },
+  {
+    "file": "cikolata.webp",
+    "source": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      900,
+      662
+    ],
+    "bytes": 60236
+  },
+  {
+    "file": "pasta.webp",
+    "source": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      840,
+      1050
+    ],
+    "bytes": 47574
+  },
+  {
+    "file": "kurabiye.webp",
+    "source": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      839,
+      1050
+    ],
+    "bytes": 119690
+  },
+  {
+    "file": "tart.webp",
+    "source": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      700,
+      1050
+    ],
+    "bytes": 37986
+  },
+  {
+    "file": "kafe.webp",
+    "source": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      900,
+      595
+    ],
+    "bytes": 33824
+  },
+  {
+    "file": "ekmek.webp",
+    "source": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      900,
+      599
+    ],
+    "bytes": 133766
+  },
+  {
+    "file": "limonata.webp",
+    "source": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      700,
+      1050
+    ],
+    "bytes": 24864
+  },
+  {
+    "file": "espresso.webp",
+    "source": "https://images.unsplash.com/photo-1769179529869-16e8267d2b15?auto=format&fit=crop&w=1000&q=78&fm=webp",
+    "page": "https://unsplash.com/photos/a-small-cup-of-black-coffee-on-a-saucer-7jhmhJUedQw",
+    "author": "David Magalhães",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      789,
+      1050
+    ],
+    "bytes": 18976
+  },
+  {
+    "file": "cay.webp",
+    "source": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=1000&q=78&fm=webp",
+    "page": "https://unsplash.com/photos/white-and-brown-ceramic-mug-qEcWgrTG578",
+    "author": "Drew Jemmett",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      900,
+      602
+    ],
+    "bytes": 123476
+  },
+  {
+    "file": "americano.webp",
+    "source": "https://images.unsplash.com/photo-1613146565665-122c3210d75c?auto=format&fit=crop&w=1100&q=85&fm=webp",
+    "page": "https://unsplash.com/photos/white-ceramic-mug-on-white-ceramic-saucer-YQsAhzo3Vqk",
+    "author": "Henny Kasa",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      700,
+      1050
+    ],
+    "bytes": 19704
+  },
+  {
+    "file": "cappuccino.webp",
+    "source": "https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=1100&q=85&fm=webp",
+    "page": "https://unsplash.com/photos/cappuccino-coffee-in-mug-tA90pRfL2gM",
+    "author": "Nathan Dumlao",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      700,
+      1050
+    ],
+    "bytes": 35850
+  },
+  {
+    "file": "buzlu-americano.webp",
+    "source": "https://images.unsplash.com/photo-1785840428018-a0ee37020f5c?auto=format&fit=crop&w=1100&q=85&fm=webp",
+    "page": "https://unsplash.com/photos/a-glass-of-iced-coffee-with-foam-and-ice-cubes-nkh4R-7Rrq8",
+    "author": "Mona Jain",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      699,
+      1050
+    ],
+    "bytes": 22962
+  },
+  {
+    "file": "karamelli-buzlu-latte.webp",
+    "source": "https://images.unsplash.com/photo-1527678357412-ef45dfbd9ecc?auto=format&fit=crop&w=1100&q=85&fm=webp",
+    "page": "https://unsplash.com/photos/shallow-focus-photo-of-brown-liquid-in-clear-drinking-glass-ZuHjaQcYhDY",
+    "author": "Eiliv Aceron",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      700,
+      1050
+    ],
+    "bytes": 59206
+  },
+  {
+    "file": "cikolatali-kruvasan.webp",
+    "source": "https://images.unsplash.com/photo-1774979517550-2b9f916b8eb4?auto=format&fit=crop&w=1100&q=85&fm=webp",
+    "page": "https://unsplash.com/photos/chocolate-croissant-dusted-with-cocoa-powder-on-a-white-plate--NOgzXhGJpc",
+    "author": "Madeline Liu",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      700,
+      1050
+    ],
+    "bytes": 28232
+  },
+  {
+    "file": "bademli-kruvasan.webp",
+    "source": "https://images.unsplash.com/photo-1757124034578-2ec0f0843fcc?auto=format&fit=crop&w=1100&q=85&fm=webp",
+    "page": "https://unsplash.com/photos/almond-croissants-dusted-with-powdered-sugar-on-a-wooden-board-vJO9OMWkIcU",
+    "author": "Lily Bui Thi",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      589,
+      1050
+    ],
+    "bytes": 44270
+  },
+  {
+    "file": "bitki-cayi.webp",
+    "source": "https://images.unsplash.com/photo-1749105862005-6e0409c8c55a?auto=format&fit=crop&w=1100&q=85&fm=webp",
+    "page": "https://unsplash.com/photos/chamomile-tea-in-a-black-teacup-and-saucer-1X7SJhapVLM",
+    "author": "Gaia&Co",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      592,
+      1050
+    ],
+    "bytes": 20356
+  },
+  {
+    "file": "kakaolu-kurabiye.webp",
+    "source": "https://images.unsplash.com/photo-1618822612659-dd44957a9462?auto=format&fit=crop&w=1600&q=88&fm=webp",
+    "page": "https://unsplash.com/photos/chocolate-cookies-on-clear-glass-plate-VLI9EkFQi8k",
+    "author": "May Lawrence",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      900,
+      786
+    ],
+    "bytes": 64472,
+    "crop": {
+      "left_fraction": 0.0,
+      "right_fraction": 0.64
+    }
+  },
+  {
+    "file": "vanilyali-meyve-pastasi.webp",
+    "source": "https://images.unsplash.com/photo-1770377252174-0cb4c01f18c5?auto=format&fit=crop&w=1600&q=88&fm=webp",
+    "page": "https://unsplash.com/photos/vanilla-cake-with-raspberry-filling-and-fresh-berries-GQICjRRSEJ0",
+    "author": "Foodie Flavours",
+    "license": "https://unsplash.com/license",
+    "dimensions": [
+      784,
+      900
+    ],
+    "bytes": 57006,
+    "crop": {
+      "left_fraction": 0.51,
+      "right_fraction": 1.0
+    }
+  }
+]

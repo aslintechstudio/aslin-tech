@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOKA &amp; MİRA | Butik kahve ve pastane</title>
+  <meta name="description" content="Bir fincan mutluluk, bir dilim huzur. MOKA & MİRA'nın Türkçe dijital menüsünü keşfedin, içeceğinizi kişiselleştirin ve demo sipariş deneyimini yaşayın.">
+  <meta name="theme-color" content="#35251F">
+  <meta property="og:title" content="MOKA & MİRA | Butik kahve ve pastane">
+  <meta property="og:description" content="Kahveye, tatlıya ve küçük molalara ayrılmış kurgusal bir butik kafe deneyimi.">
+  <meta property="og:image" content="assets/kahve.webp">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
+  <header class="header shell">
+    <a class="brand" href="#ana-sayfa" aria-label="MOKA & MİRA ana sayfa"><span class="brand-mark" aria-hidden="true">m.</span><span><strong>MOKA <i>&amp;</i> MİRA</strong><small>BUTİK KAHVE VE PASTANE</small></span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Menüyü aç">☰</button>
+    <nav id="main-nav" aria-label="Ana menü"><a href="#ana-sayfa">Ana Sayfa</a><a href="#menu">Menümüz</a><a href="#hakkimizda">Hakkımızda</a><a href="#one-cikanlar">Öne Çıkanlar</a><a href="#iletisim">İletişim</a></nav>
+    <button class="cart-trigger" type="button" data-cart>Sepetim <span id="cart-count">0</span></button>
+  </header>
+  <main id="icerik">
+    <section class="hero shell" id="ana-sayfa" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow">KÜÇÜK MOLALAR, GÜZEL TATLAR</p><h1 id="hero-title">Bir fincan mutluluk,<br>bir dilim <em>huzur.</em></h1><p>Kahvenin kokusu, fırından çıkan ilk kruvasan.<br>Günün en güzel anı, belki de küçük bir mola.</p><a class="button primary" href="#menu">Menüyü İncele <span aria-hidden="true">↗</span></a><div class="hero-signature"><span aria-hidden="true"><img class="coffee-bean" src="assets/coffee-bean.svg" width="40" height="40" alt=""></span><span>Kahveye eşlik eden<br><strong>küçük mutluluklar.</strong></span></div></div>
+      <div class="hero-visual"><img class="hero-photo" src="assets/kahve.webp" width="1200" height="1800" alt="Ahşap masada, yeşil bitkilerin yanında süt köpüklü kahveler" fetchpriority="high"><div class="photo-caption"><span>Biraz yavaşlayın.</span><small>Bu an size ait.</small></div><div class="pastry-note"><img src="assets/kruvasan.webp" width="1200" height="800" alt="Altın renkli, kat kat kruvasanlar" loading="lazy"><span>Kahvenin yanına?<strong>Tereyağlı kruvasan ↗</strong></span><button type="button" data-product="kruvasan" aria-label="Tereyağlı kruvasanı incele"></button></div></div>
+    </section>
+    <div class="intro-strip"><div class="shell"><span>Özenli bir kahve molası</span><i aria-hidden="true"><img class="coffee-bean" src="assets/coffee-bean.svg" width="40" height="40" alt=""></i><span>Kat kat mutluluk</span><i aria-hidden="true"><img class="coffee-bean" src="assets/coffee-bean.svg" width="40" height="40" alt=""></i><span>Bir dilim iyi his</span></div></div>
+    <section class="section shell" id="one-cikanlar" aria-labelledby="popular-title"><div class="section-heading"><div><p class="eyebrow">İLK YUDUMDA, İLK LOKMADA</p><h2 id="popular-title">Molanın favorileri.</h2></div><a class="text-link" href="#menu">Tüm menüyü keşfet <span aria-hidden="true">↗</span></a></div><div class="product-grid featured-grid" id="popular-products"></div></section>
+    <section class="menu-section" id="menu" aria-labelledby="menu-title"><div class="shell"><div class="section-heading"><div><p class="eyebrow">TAM SİZE GÖRE BİR ŞEY VAR</p><h2 id="menu-title">Bugün canınız ne istiyor?</h2></div><p>Kahvenizi kendinize göre hazırlayın.<br>Yanına küçük bir mutluluk ekleyin.</p></div><div class="menu-tools"><div class="category-list" id="categories" role="group" aria-label="Ürün kategorileri"></div><label class="search-label"><span>Menüde ara</span><input id="search" type="search" placeholder="Latte, kruvasan, pasta…" maxlength="100" autocomplete="off"></label></div><div class="menu-meta"><p id="result-count" role="status" aria-live="polite"></p><span>Örnek fiyatlar · Türk lirası</span></div><div class="product-grid" id="menu-products"></div><div class="empty-state" id="no-results" hidden><span aria-hidden="true">⌕</span><h3>Bu aramada ürün bulamadık.</h3><p>Başka bir kelime deneyin veya tüm menüye göz atın.</p><button class="button secondary" id="reset-search" type="button">Tüm ürünleri göster</button></div><p class="demo-note">MOKA &amp; MİRA kurgusal bir markadır. Ürünler ve fiyatlar örnektir; gerçek sipariş veya ödeme alınmaz. Fotoğraflar temsili stok görsellerdir.</p></div></section>
+    <section class="section shell sweet-section" aria-labelledby="sweet-title"><div class="sweet-intro"><p class="eyebrow">TATLI BİR ARA</p><h2 id="sweet-title">Günün tatlıları,<br>günün güzel bahanesi.</h2><p>Çikolatanın yoğunluğu, meyvenin hafifliği.<br>Her molanın bir tatlı tarafı var.</p><button class="text-link" type="button" id="show-sweets">Tatlı menüsünü incele <span aria-hidden="true">↗</span></button></div><div id="sweet-products" class="sweet-grid"></div></section>
+    <section class="story shell" id="hakkimizda" aria-labelledby="story-title"><div class="story-image"><img src="assets/kafe.webp" width="1200" height="800" alt="Sıcak ışıklı, ahşap detaylı bir kafenin temsili iç mekânı" loading="lazy"><span>MOKA <i>&amp;</i> MİRA</span></div><div class="story-copy"><p class="eyebrow">BİZİM KÜÇÜK HİKÂYEMİZ</p><h2 id="story-title">İyi bir mola için<br>büyük bir neden gerekmez.</h2><p>MOKA &amp; MİRA'nın kurgusal hikâyesi, kahveyle başlayan uzun bir sohbetten doğdu. Moka kahvenin sıcaklığını, Mira ise günlük hayatın içindeki küçük keşifleri temsil ediyor.</p><p>Bu hayali butik kafede aceleye yer yok. Bir fincanın etrafında buluşmayı, aynı tatlıyı paylaşmayı ve sıradan bir güne güzel bir ara vermeyi seviyoruz.</p><span class="story-signature">Bir fincan. Bir dilim. Bir an.</span></div></section>
+    <section class="order-callout shell" id="iletisim" aria-labelledby="order-title"><div><p class="eyebrow">MOLANIZI BİRLİKTE HAZIRLAYALIM</p><h2 id="order-title">Sizin kahveniz.<br>Sizin küçük mutluluğunuz.</h2><p>Menüden seçin, size göre kişiselleştirin,<br>demo sipariş deneyimini keşfedin.</p></div><div><a class="button light" href="#menu">Menüden bir şeyler seç <span aria-hidden="true">↗</span></a><p class="contact-note">Bu bir portföy demosudur. Gerçek işletme adresi,<br>telefon veya iletişim gönderimi içermez.</p></div></section>
+  </main>
+  <footer class="footer shell"><div class="footer-main"><a class="brand" href="#ana-sayfa"><span class="brand-mark" aria-hidden="true">m.</span><span><strong>MOKA <i>&amp;</i> MİRA</strong><small>BUTİK KAHVE VE PASTANE</small></span></a><p>Bir fincan mutluluk, bir dilim huzur.</p><a href="#menu">Menümüz ↗</a></div><div class="footer-bottom"><p>Aslin Tech tarafından geliştirilen kurgusal portföy projesidir.</p><p>© <span id="year"></span> MOKA &amp; MİRA · Demo</p></div></footer>
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-title"><button class="close-button" type="button" data-close="product-dialog" aria-label="Ürün detayını kapat">×</button><div id="product-detail"></div></dialog>
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title"><div class="dialog-heading"><div><p class="eyebrow">MOLANIZA EKLEDİKLERİNİZ</p><h2 id="cart-title">Sepetim</h2></div><button class="close-button" type="button" data-close="cart-dialog" aria-label="Sepeti kapat">×</button></div><div id="cart-content"></div></dialog>
+  <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title"><div class="dialog-heading"><div><p class="eyebrow">SON BİR GÖZ ATIN</p><h2 id="checkout-title">Sipariş özeti</h2></div><button class="close-button" type="button" data-close="checkout-dialog" aria-label="Sipariş özetini kapat">×</button></div><div id="checkout-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="noscript-note">Dijital menü, sepet ve demo sipariş için tarayıcınızda JavaScript'i etkinleştirin.</p></noscript>
+</body>
+</html>
